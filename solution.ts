@@ -16,3 +16,15 @@ const processInput = (value: string | number | boolean): string | number => {
   }
 };
 
+
+type TCoordinate = readonly [
+  latitude: number,
+  longitude: number,
+  locationName: string,
+];
+
+const formatCoordinate = (coordinate: TCoordinate): string => {
+  const [latitude, longitude, locationName] = coordinate;
+  return `Location: ${locationName} (${latitude}, ${longitude})`;
+};
+
