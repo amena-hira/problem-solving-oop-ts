@@ -28,3 +28,12 @@ const formatCoordinate = (coordinate: TCoordinate): string => {
   return `Location: ${locationName} (${latitude}, ${longitude})`;
 };
 
+
+const concatenateArrays = <T>(...arrays: T[][]):T[] => {
+  const resultArray:T[] = []
+  for (const array of arrays) {
+   resultArray.push(...array)
+  }
+  return resultArray;
+};
+
