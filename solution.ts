@@ -53,3 +53,12 @@ const getPopularCourses = (
   }
   return popularCourses;
 };
+
+const pluckValues = <T, K extends keyof T>(items: T[], key: K): T[K][] => {
+  const result:T[K][] = []
+  for (const item of items) {
+    result.push(item[key])
+  }
+  return result;
+};
+
