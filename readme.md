@@ -6,7 +6,7 @@ This assignment covers TypeScript core concepts such as basic types of Typescrip
 
 The solutions are written in TypeScript with explicit parameter and return types, following the assignment requirements.
 
-## Blog Posts
+## Blog Posts 
 
 I have written two blog posts explaining important TypeScript concepts with practical code examples.
 
